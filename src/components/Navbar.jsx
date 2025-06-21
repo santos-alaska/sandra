@@ -40,7 +40,7 @@ const Header = () => {
 
   return (
     // Added `relative` to be the positioning anchor for the mobile menu
-    <header className="bg-white w-full border-t-8 border-gray-800 shadow-sm relative">
+    <header className="bg-white w-full shadow-sm relative">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         
         {/* Logo (swapped order for better mobile layout) */}
