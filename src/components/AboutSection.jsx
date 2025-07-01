@@ -2,19 +2,16 @@ import React from 'react';
 import about1 from '../assets/about1.jpg'; 
 import about2 from '../assets/about2.jpg';
 
-// You can replace these with your actual image paths
 const IMAGE_1_URL = about1;
 const IMAGE_2_URL = about2;
 
 const AboutSection = () => {
   return (
-    // MODIFIED: Replaced the solid background color with a subtle vertical gradient from white to light gray.
-    <section className="w-full py-16 lg:py-24 bg-gradient-to-b from-white to-gray-100">
+    <section className="w-full py-16 md:pb-24  bg-gradient-to-b from-white to-gray-100">
       <div className="container mx-auto px-6">
-        
         {/* Text Content */}
-        <div className="flex flex-col items-center text-center">
-          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800">
+        <div className="flex flex-col md:max-w-[70%] mx-auto ">
+          <h2 className="text-3xl lg:text-[45px] text-start text-gray-800">
             Who Is Sandra Bullock
           </h2>
           <p className="mt-4 max-w-2xl text-sm text-gray-600 leading-relaxed">
@@ -39,7 +36,7 @@ const AboutSection = () => {
                 src={IMAGE_2_URL}
                 alt="Portrait of Sandra Bullock"
                 // MODIFIED: Added object-cover to prevent the image from stretching.
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[400px] "
               />
             </div>
           </div>

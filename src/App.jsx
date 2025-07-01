@@ -7,8 +7,10 @@ import AdditionalInfoSection from './components/AdditionalInfoSection.jsx'
 import MembershipSection from './components/MembershipSection.jsx'
 import MeetAndGreetSection from './components/MeetAndGreetSection.jsx'
 import FortisFilmSection from './components/FortisFilmSection.jsx'
-import PaymentInstructionsSection from './components/PaymentInstructionsSection.jsx'
+import BrandPartnerships from './components/BrandPartnerships.jsx'
 import Footer from './components/Footer.jsx'
+import Foundation from './components/Foundation.jsx'
+import HowToPay from './components/HowToPay.jsx'
 
 const App = () => {
   return (
@@ -21,7 +23,9 @@ const App = () => {
       <MembershipSection />
       <MeetAndGreetSection />
       <FortisFilmSection />
-      <PaymentInstructionsSection />
+      <Foundation />
+      <HowToPay />
+      <BrandPartnerships />
       <Footer />
     </div>
   )

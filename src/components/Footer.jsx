@@ -1,6 +1,7 @@
 import React from 'react';
+import { SlSocialFacebook } from "react-icons/sl";
 
-// SVG Icon Components for better readability
+
 const MailIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
     <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -25,7 +26,7 @@ const Footer = () => {
     <footer className="bg-[#2d4a43] text-white">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          
+
           {/* Left Column: Contact */}
           <div>
             <h3 className="text-xl font-semibold mb-6">Contact</h3>
@@ -51,6 +52,18 @@ const Footer = () => {
                     +1 (442) 235-9602
                   </a>
                 </div>
+
+
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="border border-gray-400 rounded-full p-2">
+                  <SlSocialFacebook className='h-5 w-5' />
+                </div>
+                <div>
+                  <a href="https://www.facebook.com/share/1CFNubkot7/?mibextid=wwXIfr" className="text-sm hover:underline">
+                    Facebook
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -69,19 +82,19 @@ const Footer = () => {
                   className="w-full bg-white text-gray-800 py-2 px-4 focus:outline-none"
                   aria-label="Email for subscription"
                 />
-                <button type="submit" className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 transition-colors duration-200">
+                <button type="submit" className="bg-[#2d4a43] cursor-pointer text-white py-2 px-4 transition-colors duration-200">
                   <span className="hidden sm:inline">Subscribe</span>
                   <span className="sm:hidden"><ArrowIcon /></span>
                 </button>
               </div>
             </form>
           </div>
-          
+
         </div>
       </div>
-       <div className="bg-black bg-opacity-20 text-center py-4">
+      {/* <div className="bg-black bg-opacity-20 text-center py-4">
           <p className="text-xs text-gray-400">© {new Date().getFullYear()} Sandra Bullock Fans. All Rights Reserved.</p>
-      </div>
+      </div> */}
     </footer>
   );
 };
