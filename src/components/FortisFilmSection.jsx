@@ -43,8 +43,15 @@ const FortisFilmSection = () => {
                 </div>
 
                 {/* Call-to-Action Button */}
-                <button className="mt-12 bg-[#2d4a43] text-white font-semibold py-3 px-6 rounded-md hover:bg-opacity-90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2d4a43]">
-                    Join Meet & Greet
+                <button
+                    onClick={() => {
+                        const section = document.getElementById("howToPay");
+                        if (section) {
+                            section.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }}
+                    className="cursor-pointer mt-12 bg-[#2d4a43] text-white font-semibold py-3 px-6 rounded-md hover:bg-opacity-90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2d4a43]">
+                    Invest in Fortis Films
                 </button>
 
             </div>

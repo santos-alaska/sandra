@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Left Column: Contact */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Contact</h3>
+            <h3 className="text-xl font-semibold mb-6">Customer Service</h3>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="border border-gray-400 rounded-full p-2">
@@ -74,7 +74,8 @@ const Footer = () => {
             <p className="text-sm text-gray-300 mb-4">
               Stay Informed About Our Security Solution and News
             </p>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form>
+            {/* <form onSubmit={(e) => e.preventDefault()}> */}
               <div className="flex items-center border border-gray-500 rounded-md overflow-hidden max-w-sm">
                 <input
                   type="email"

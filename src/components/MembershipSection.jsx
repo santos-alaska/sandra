@@ -26,7 +26,7 @@ const membershipTiers = [
 
 const MembershipSection = () => {
   return (
-    <section className="bg-[#F2F2F2] w-full py-16 lg:py-24">
+    <section id="memberships" className="bg-[#F2F2F2] w-full py-16 lg:py-24">
       <div className="container mx-auto px-6 flex flex-col items-center">
 
         {/* Section Header */}

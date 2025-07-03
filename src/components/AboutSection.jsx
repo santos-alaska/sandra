@@ -7,7 +7,7 @@ const IMAGE_2_URL = about2;
 
 const AboutSection = () => {
   return (
-    <section className="w-full py-16 md:pb-24  bg-gradient-to-b from-white to-gray-100">
+    <section id="about" className="w-full py-16 md:pb-24  bg-gradient-to-b from-white to-gray-100">
       <div className="container mx-auto px-6">
         {/* Text Content */}
         <div className="flex flex-col md:max-w-[70%] mx-auto ">

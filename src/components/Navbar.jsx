@@ -31,18 +31,19 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Memberships', href: '#' },
-    { name: 'Meet & Greet', href: '#' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'Home', href: 'home' },
+    { name: 'About', href: 'about' },
+    { name: 'Memberships', href: 'memberships' },
+    { name: 'Meet & Greet', href: 'meet-greet' },
+    { name: 'Contact Us', href: 'contact' },
   ];
+
 
   return (
     // Added `relative` to be the positioning anchor for the mobile menu
     <header className="bg-white w-full shadow-sm relative">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        
+
         {/* Logo (swapped order for better mobile layout) */}
         <div className="flex items-center">
           <Logo />
@@ -52,13 +53,19 @@ const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex items-center space-x-6">
             {navItems.map((item) => (
-              <li key={item.name}>
-                <a
-                  href={item.href}
-                  className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors duration-200"
+              <li key={item.name} className='cursor-pointer'>
+                <button
+                  onClick={() => {
+                    const section = document.getElementById(item.href);
+                    if (section) {
+                      section.scrollIntoView({ behavior: 'smooth' });
+                      // setIsOpen(false);
+                    }
+                  }}
+                  className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors duration-200 cursor-pointer"
                 >
                   {item.name}
-                </a>
+                </button>
               </li>
             ))}
           </ul>
@@ -83,7 +90,13 @@ const Header = () => {
             {navItems.map((item) => (
               <li key={item.name} className="w-full text-center">
                 <a
-                  href={item.href}
+                  onClick={() => {
+                    const section = document.getElementById(item.href);
+                    if (section) {
+                      section.scrollIntoView({ behavior: 'smooth' });
+                      setIsOpen(false);
+                    }
+                  }}
                   className="block py-3 text-gray-600 hover:bg-gray-100 font-medium transition-colors duration-200"
                 >
                   {item.name}

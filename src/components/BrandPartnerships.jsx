@@ -2,7 +2,7 @@ import React from 'react';
 
 const BrandPartnerships = () => {
   return (
-    <div className="bg-white font-sans w-full">
+    <section id="contact" className="bg-white font-sans w-full">
       <div className="container mx-auto text-center py-[100px] px-6">
         
         {/* Main Heading */}
@@ -29,7 +29,7 @@ const BrandPartnerships = () => {
         </a>
         
       </div>
-    </div>
+    </section>
   );
 };
 
